@@ -43,14 +43,15 @@ Array.from(boxes).forEach(element=>{
         }
     })
 })
-reset.addEventListener('click',()=>{
-    let boxtexts=document.querySelectorAll('.boxtext');
-    Array.from(boxtexts).forEach(element=>{
-        element.innerText=""
+
+reset.addEventListener('click', ()=>{
+    let boxtexts = document.querySelectorAll('.boxtext');
+    Array.from(boxtexts).forEach(element => {
+        element.innerText = ""
     });
-    turn="❌";
-    isgameover=false
-    document.querySelector(".line").style.width="0vw"
-    document.getElementsByClassName("info")[0].innerText="Turn for"+turn;
-    document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width="0px"
+    turn = "❌"; 
+    isgameover = false
+    document.querySelector(".line").style.width = "0vw";
+    document.getElementsByClassName("info")[0].innerText  = "Turn for " + turn;
+    document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0px"
 })
